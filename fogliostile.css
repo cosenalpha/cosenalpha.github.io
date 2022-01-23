@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Fontesque, serif;
+     src: url(fontesque.ttf);
+}
+
+.tasti{
+    border: none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none; /* elimina sottolineature dal testo */
+    display: inline; /* non va a capo e occupa solo la larghezza necessaria */
+    font-size: 37px;
+    font-family: Fontesque, serif;
+    transition-duration: 0.5s;
+    cursor: pointer;
+	position: absolute;
+}
+
+#hometasto {
+		position: absolute;
+	left: -10%;
+	top: 0%;
+}
+
+#hometasto:hover {
+  filter: drop-shadow(0px 2px 3px #392b1b);
+}
+#gioca {
+		position: absolute;
+	left: 36%;
+	top: 26%;
+  opacity: 0.9;
+}
+
+#storia {
+		position: absolute;
+	left: 34%;
+	top: 40%;
+  opacity: 0.9;
+
+}
+
+#crediti {
+		position: absolute;
+	left: 14.4%;
+	top: 52.6%;
+  opacity: 0.9;
+
+}
+
+
+#tastohome1 {
+	position: absolute;
+	left: 1%;
+	top: -52.6%;
+   opacity: 0.4;
+}
+
+a {
+  color: #392b1b;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #392b1b;
+
+}
+
+.copertina {
+	padding: 0;
+	margin: 0;
+	max-width: 1024px;
+	max-height: 768px;
+}
+
+
+#posizione {
+	top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+	position: absolute; 
+
+}
+
+#giocaslide {
+
+    text-align: center;
+    text-decoration: none; /* elimina sottolineature dal testo */
+    font-size: 30px;
+    opacity: 0.9;
+
+    font-family: Fontesque, serif;
+    cursor: pointer;
+}
+
+.tasti:hover {
+ transform: scale(1.1) perspective(1px)
+}
+
+canvas {
+	top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+	position: absolute; 
+}
+
+body {
+  background-image: url('pagina web/Sfondo.jpg');
+}
+
+#bottone {
+    width: 50px;
+}
+
+
+/*
+#tastohome {
+	position: absolute;
+	display: block;
+	margin-top: 2%;
+    margin-left: 15%;
+    transition-duration: 0.5s;
+
+} */
+
+#tastohome:hover {
+   transform: scale(1.1) perspective(1px)
+}
+
+.mySlides fade {
+  display: block;
+
+}
+
+#prev, #next {
+/* freccette avanti e indietro */
+  cursor: pointer;
+  position: absolute;
+  top: 90%; /* determina la distanza dal margine superiore del contenitore ancestor (contenuto) */
+  width: auto;
+  margin: 0;
+  /*filter: drop-shadow(0px 2px 3px #392b1b); */
+  display: inline-block; /* permette di definire una dimensione e non va a capo */
+  border: none;
+  overflow: hidden; /* il contenuto eccedente dalle dimensioni fissate viene nascosto */
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.5s;
+
+}
+
+#prev:hover {
+   transform: scale(1.1) perspective(1px);
+	     filter: drop-shadow(0px 2px 3px #392b1b);
+
+}
+
+#next:hover {
+  transform: scale(1.1) perspective(1px);
+	    filter: drop-shadow(0px 2px 3px #392b1b);
+
+}
+
+#next {
+  right: -10%
+}
+
+#prev {
+  left: -10%;
+}
+
+
+#tastolino {
+/*  filter: drop-shadow(0px 2px 3px #392b1b); */
+  cursor: pointer;
+  position: absolute;
+  top: 90%; /* determina la distanza dal margine superiore del contenitore ancestor (contenuto) */
+  width: auto;
+  right: -20%;
+  margin: 0;
+/*  padding: 0px 20px; */
+  display: inline-block; /* permette di definire una dimensione e non va a capo */
+  border: none;
+  overflow: hidden; /* il contenuto eccedente dalle dimensioni fissate viene nascosto */
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.5s;
+
+}
+
+#tastolino:hover {
+   transform: scale(1.1) perspective(1px);
+	     filter: drop-shadow(0px 2px 3px #392b1b);
+
+}
+
+
+.container {
+  display: block;
+  margin: auto;
+  width: 70%;
+		max-width: 1024px;
+	max-height: 768px;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: 0; filter: brightness(0%)}
+  to {opacity: 1; filter: brightness(100%)}
+}
+
+@keyframes fade {
+  from {opacity: 0; filter: brightness(0%)}
+  to {opacity: 1; filter: brightness(100%)}
+}
